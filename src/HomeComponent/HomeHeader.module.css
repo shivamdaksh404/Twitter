@@ -1,0 +1,37 @@
+.mainContainer {
+  min-width: 37rem;
+  /* border: 1px solid; */
+  position: fixed;
+  top: 0px;
+  z-index: 500;
+  backdrop-filter: blur(5px);
+}
+.headName {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toggleBtn {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.toggleBtn > div {
+  cursor: pointer;
+  display: block;
+  font-size: larger;
+  font-weight: 600;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggleBtn p {
+  text-align: center;
+  padding: 16px 16px;
+}
+.toggleBtn > div:hover {
+  background-color: rgba(204, 201, 201, 0.486);
+}

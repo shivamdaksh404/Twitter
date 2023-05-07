@@ -1,0 +1,144 @@
+.main{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(165, 164, 164);
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 41.8%;
+    min-height: 40.5rem;
+    position: relative;
+    top: 7.8%;
+    left: 29.1%;
+    gap: 10px;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
+.heading{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+    position: relative;
+    top: 10px;
+    left: -23%;
+
+}
+.heading :nth-child(1){
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+   
+}
+.heading :nth-child(1):hover{
+    background-color: whitesmoke;
+
+}
+.heading :nth-child(2){
+    height: 20%;
+    width: 2rem;
+    color: rgb(95, 141, 229);
+    color: #00acee;
+}
+
+
+.apple{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top:20px;
+    left: 3.%;
+    gap:14px;
+    width: 50%;
+    padding: 5px;
+}
+.apple > span{
+   margin-bottom: 20px;
+    font-size: 2rem;
+
+
+}
+.apple > Button {
+    border-radius: 3rem;
+    color: black;
+    font-weight: bold;
+    border: 1px solid rgb(221, 221, 221);
+    width: 95%;
+    text-transform: none !important;
+    margin-bottom: 13px;
+    min-height: 40px;
+}
+.apple :nth-child(2){
+    font-weight: unset;
+}
+
+.sectionDivider{
+
+display: flex;
+gap: 10px;
+width: 50%;
+position: relative;
+
+margin-top: -15px;
+
+}
+
+.sectionDivider :nth-child(odd)  {
+    width: 110%;
+    position: relative;
+    top: 0.15rem;
+    left: -2.7%;
+    
+}
+.sectionDivider span{
+    position: relative;
+    right: 1.3%;
+    top: 1.5px;
+    font-weight: bold;
+}
+
+.login{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+
+
+}
+ .login  Button {
+    border-radius: 3rem;
+    text-transform: none;
+    font-weight: bold;
+ }
+ .login :nth-child(3):hover{
+    background-color: rgb(44, 44, 44);
+ }
+.login :nth-child(4){
+    color: black;
+    border: 1px solid rgb(221, 221, 221);
+}
+.login :nth-child(4):hover{
+background-color: rgb(235, 235, 235);    
+border: 1px solid rgb(221, 221, 221);
+}
+
+ .switch{
+
+position: relative;
+left: -4.5%;
+top: 1rem;
+font-size: 15px;
+ }
+
+ .switch :nth-child(2) {
+    color: blue;
+    cursor: pointer;
+
+ }

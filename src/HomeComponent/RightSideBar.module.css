@@ -1,0 +1,99 @@
+.Main {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* border: 1px solid; */
+}
+
+.Contents{
+    margin-left: 1rem;
+}
+
+.Contents > h4 {
+  margin-top: 0.5rem;
+  color: #536471;
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+
+.Contents > span {
+    margin-top: 2rem;
+    color: #536471;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.butt1>Button{
+    font-weight: bolder;
+}
+
+.map{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid; */
+}
+
+.Main>div>h3{
+  position: relative;
+  left: 1rem;
+}
+
+.Main>button{
+  width: fit-content;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: #93C5FD;
+  position: relative;
+  top: 1rem;
+  left: 1.1rem;
+}
+
+.wrapper{
+  /* border: 3px solid red; */
+  position: relative;
+}
+
+.butt2{
+  position: relative;
+}
+
+.Pop{
+  border: 3px solid rgba(204, 201, 201, 0.486) ;
+    background-color: white;
+    border-radius: 1.5rem;
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    position: absolute;
+    left: -17rem;
+    top: -4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+
+.Pop p{
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: relative;
+  /* left: 1em; */
+  /* border: 1px solid; */
+  height: 50%;
+  width: 100%;
+  /* display: flex;
+  justify-content: start;
+  align-items: center; */
+  cursor: pointer;
+  border-radius: 15%;
+}
+
+.Pop p:hover{
+  background-color: rgba(204, 201, 201, 0.486);
+}

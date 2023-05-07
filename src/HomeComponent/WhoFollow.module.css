@@ -1,0 +1,61 @@
+.mainContainer {
+    border-radius: 1em;
+    background-color: whitesmoke;
+
+}
+h2{
+    padding: 10px;
+}
+
+.userDiv {
+    min-height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+
+    gap: 10px;
+}
+
+img {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+
+ }
+
+.userDiv:hover {
+    background-color: rgba(204, 201, 201, 0.486);
+    color: black;
+
+}
+
+.userDetail {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    right: 7em;
+    width: 8.5em;
+}
+
+.showMore{
+    padding: 10px;
+}
+ .showMore:hover{
+    border-radius: 0em 0em 1em 1em;
+    background-color: rgba(204, 201, 201, 0.486);
+
+ }
+ .userDiv Button{
+    background-color: black;
+    text-transform: none;
+ }
+ .userDiv Button:hover{
+    background-color: rgb(45, 45, 45);
+ }

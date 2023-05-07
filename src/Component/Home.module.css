@@ -1,0 +1,45 @@
+.RightMain {
+  /* border: 1px solid; */
+  width: 21.875rem;
+  position: relative;
+  top: 9%;
+  border-radius: 3%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.RMain {
+  position: relative;
+  left: 33%;
+}
+
+.container {
+  display: flex;
+}
+.leftDiv {
+  position: relative;
+  left: 20%;
+}
+.centerDiv {
+  position: relative;
+  top: 3.5rem;
+  left: 30%;
+  /* border: 1px solid; */
+  border: 1px darkgray;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  height: 27rem;
+  border-radius: 3%;
+  background-color: whitesmoke;
+  gap: 1rem;
+}
+
+.whoFollow {
+  margin-top: 3rem;
+  width: 21.875rem;
+}

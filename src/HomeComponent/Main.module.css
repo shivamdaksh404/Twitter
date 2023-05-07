@@ -1,0 +1,94 @@
+.mainWrapper{
+
+    overflow: hidden;
+    overflow: scroll;
+    height: 100vh;
+
+width: 37rem;
+}
+.mainWrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+.container{
+    padding: 10px;
+    background-color: white;
+    padding-bottom: 50px;
+    width: 100%;
+    border: 0.01rem solid rgb(231, 231, 231);
+
+
+}
+.container:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.header{
+   gap: 23px;
+    display: flex;
+    color: black;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+.header img{
+    min-width: 8.9%;
+border-radius: 50%;
+
+border: 1px solid whitesmoke;
+
+}
+.header h5{
+    font-size: large;
+    margin: 0px;
+    margin-bottom: -10px;
+}
+.header h5 span{
+    font-weight: normal;
+    font-size: 15px;
+}
+.post img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    left: 2.5%;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btnDiv{
+    width: 80%;
+   
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 12%;
+    top: 1rem;
+}
+.btnDiv button{
+ color: black;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+
+}
+
+#commentBtn:hover{
+color:#00acee;
+}
+#retweetBtn:hover{
+color: rgb(123, 201, 142);
+}
+#likesBtn:hover{
+color: deeppink;
+}
+#trendingBtn:hover{
+color: #00acee;
+
+}
+#shareBtn:hover{
+color: #00acee;
+}
