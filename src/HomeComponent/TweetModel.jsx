@@ -16,7 +16,7 @@ import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import { userPic } from "../Data/AtomData/data";
-import { getPosts } from "../services/utilities";
+import { getCurrentUser, getPosts } from "../services/utilities";
 
 
 export default function TweetModel() {
@@ -43,6 +43,7 @@ export function Tweets() {
   const [tweetCount, setTweetCount] = useRecoilState(atomTweetCount)
   
   const posts = getPosts();
+  const currentUser = getCurrentUser()
 
   function handleInput(e) {
     setInput(e.target.value);
@@ -52,24 +53,30 @@ export function Tweets() {
     
   }
   function handleTweet() {
-    let id = Math.random()
-    id = Math.floor(id*80)
-    const newPost = {
-      id: id,
-      comments: 0,
-      likes: 0,
-      isLiked: false,
-      retweets: 0,
-      trending: 0,
-      profilePic: userPic,
-      postText: input,
+    setInput(input.trim())
+    if (input) {
+      let id = Math.random()
+      id = Math.floor(id * 80)
+      const newPost = {
+        id: id,
+        comments: 0,
+        likes: 0,
+        isLiked: false,
+        retweets: 0,
+        trending: 0,
+        profilePic: userPic,
+        postText: input,
+        name: currentUser.name,
+        userName: currentUser.userName
+      }
+    
+      setIsDisable(true)
+      setInput("")
+      setTweetCount(tweetCount + 1)
+      posts.unshift(newPost)
+      localStorage.setItem("posts", JSON.stringify(posts))
+      setIsTweet(false)
     }
-    setIsDisable(true)
-    setInput("")
-    setTweetCount(tweetCount+1)
-    posts.unshift(newPost)
-    localStorage.setItem("posts", JSON.stringify(posts))
-    setIsTweet(false)
   }
   return (
     <Fragment>
