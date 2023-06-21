@@ -238,7 +238,7 @@ const Register = () => {
         <div className={styles.Inside}>
           <div className={styles.apple}>
             <Button variant="outlined" startIcon={<FcGoogle />}>
-              Sign in with Google
+           Sign in with Google
             </Button>
             <Button variant="outlined" startIcon={<BsApple />}>
               Sign in with Apple
